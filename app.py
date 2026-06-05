@@ -213,7 +213,7 @@ fig1, ax1 = plt.subplots(
 )
 
 sns.heatmap(
-    X.corr(),
+    X.corr(numeric_only=True),
     cmap="Purples",
     ax=ax1
 )
